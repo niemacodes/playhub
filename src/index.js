@@ -13,6 +13,8 @@ import Payouts from './components/Payouts';
 import CreateMemberships from './components/CreateMemberships';
 import CreateContent from './components/CreateContent';
 import NavBar from './components/NavBar';
+import CreateNFT from './components/CreateNFT'
+import CreateDashboard from './components/CreateDashboard'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +27,8 @@ root.render(
       <Route path="payouts" element={<Payouts />} />
       <Route path="createcontent" element={<CreateContent />} />
       <Route path="createmembership" element={<CreateMemberships />} />
+      <Route path="create-nfts" element={<CreateNFT />} />
+      <Route path="dashboard" element={<CreateDashboard />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
