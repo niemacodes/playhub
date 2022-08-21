@@ -29,7 +29,7 @@ function App() {
                 <div className="absolute z-20 flex-col justify-center hidden pr-5 mt-4 space-y-8 md:flex md:relative md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0">
                     <a className="flex-shrink-0 font-semibold text-gray-200 hover:underline" href="#_">Login</a>
 
-                    <a href="/signup" className="flex-shrink-0 w-auto text-base font-semibold leading-5 text-left text-gray-200 capitalize bg-transparent rounded-lg md:text-sm md:py-3 md:px-6 md:font-medium md:text-center md:text-white md:bg-gray-900 md:mx-0">
+                    <a href="#_" className="flex-shrink-0 w-auto text-base font-semibold leading-5 text-left text-gray-200 capitalize bg-transparent rounded-lg md:text-sm md:py-3 md:px-6 md:font-medium md:text-center md:text-white md:bg-gray-900 md:mx-0">
                         Sign up
                     </a>
                 </div>
