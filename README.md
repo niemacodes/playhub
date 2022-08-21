@@ -11,6 +11,8 @@ We use NFTs to create memberships for fans to purchase and allow creators to mon
 - Lens: Creator Analytics Dashboard 
 - IPFS/Filecoin: Store all creator content (video, audio, text)
 - Metamask: Allow fans to purchase from creators
+- The Graph: Store user data off chain
+
 
 ## Getting Started with Create React App
 
