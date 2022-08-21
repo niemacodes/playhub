@@ -1,4 +1,5 @@
 // components/Profile.js
+import NavBar from './NavBar';
 export default function Profile(props) {
   const profile = props.profile;
 
