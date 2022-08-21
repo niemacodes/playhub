@@ -1,12 +1,5 @@
 import NavBar from "./NavBar";
-import { ethers } from 'ethers'
-import { useEffect, useState } from 'react'
-import axios from 'axios'
-import Web3Modal from 'web3modal'
-import {
-  membershipAddress
-} from '../config'
-import CreateNFT from "./CreateNFT";
+import { useState } from 'react'
 import NFTMembershipJSON from '../NFTMembership.json';
 import { useLocation } from "react-router-dom";
 import { uploadFileToIPFS, uploadJSONToIPFS } from "../pinata";
@@ -18,7 +11,6 @@ export default function CreateMemberships() {
   const [fileURL, setFileURL] = useState(null);
   const ethers = require("ethers");
   const [message, updateMessage] = useState('');
-  const location = useLocation();
 
   //OnChangeFile: uploads the NFT image to IPFS
   async function OnChangeFile(e) {
