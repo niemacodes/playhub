@@ -36,7 +36,7 @@ function App() {
             </nav>
 
             <div className="flex flex-col items-center justify-center w-full h-full py-32 -mt-20 sm:py-48 md:py-64"> 
-                <h1 className="mb-20 text-5xl font-extrabold leading-tight text-left text-white sm:text-center lg:text-7xl lg:leading-tight">Find your content. <br></br><span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-red-400 to-pink-400">Create your commumity</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-red-400 to-yellow-300">.</span></h1>
+                <h1 className="mb-20 text-5xl font-extrabold leading-tight text-left text-white sm:text-center lg:text-7xl lg:leading-tight">Find your content. <br></br><span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-red-400 to-pink-400">Create your community</span><span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-red-400 to-yellow-300">.</span></h1>
                 <a href="/home" className="mt-10 relative w-full group sm:w-auto">
                     <span className="absolute top-0 left-0 w-full h-full text-transparent border-2 border-white rounded">Join Today</span>
                     <span className="px-8 inline-block bg-gradient-to-br sm:w-auto w-full text-center from-yellow-200 font-semibold via-red-300 to-pink-400 relative transition-all ease-linear duration-150 transform group-hover:-translate-y-1.5 group-hover:translate-x-1.5 -translate-y-2.5 text-lg rounded translate-x-2 py-4">Explore Base Today!</span>

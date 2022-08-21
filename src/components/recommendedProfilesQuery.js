@@ -1,10 +1,8 @@
-import React from 'react';
-import NavBar from './NavBar';
-import '../App.css'
-import Profile from './Profile'
-import { useQuery, gql } from "@apollo/client";
+// queries/recommendedProfilesQuery.js
 
-const recommendProfiles = gql`
+import {gql} from '@apollo/client';
+
+export default gql`
   query RecommendedProfiles {
     recommendedProfiles {
           id
@@ -88,37 +86,3 @@ const recommendProfiles = gql`
     }
   }
 `;
-
-export default function Home() {
-  const {loading, error, data} = useQuery(recommendProfiles);
-
-  if (loading) return 'Loading..';
-  if (error) return `Error! ${error.message}`;
-
-  return (
-    <>
-        <NavBar></NavBar>
-        <div id="main-content" className="h-full bg-gray-50 relative overflow-y-auto lg:ml-64">
-        <main>
-        <div>
-          {data.recommendedProfiles.map((profile, index) => {
-            console.log(`Profile ${index}:`, profile);
-            return (
-              <div>
-                <Profile key={profile.id} profile={profile} displayFullProfile={false} />
-              </div>
-            );
-          })}
-        </div>
-        </main>
-        </div>
-    </>
-  );
-
-//   <div>
-//   {data.recommendedProfilesQuery.map((profile, index) => {
-//     console.log(`Profile ${index}:`, profile);
-//     return <Profile key={profile.id} profile={profile} displayFullProfile={false} />;
-//   })}
-// </div>
-}

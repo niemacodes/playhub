@@ -12,13 +12,14 @@ import Insights from './components/Insights';
 import Payouts from './components/Payouts';
 import CreateMemberships from './components/CreateMemberships';
 import CreateContent from './components/CreateContent';
-import NavBar from './components/NavBar';
 import CreateNFT from './components/CreateNFT'
-import CreateDashboard from './components/CreateDashboard'
+import CreateMarketplace from './components/CreateMarketplace'
+import { ApolloProvider } from "@apollo/client";
+import client from "./apollo-client";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+   <ApolloProvider client={client}>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
@@ -28,10 +29,12 @@ root.render(
       <Route path="createcontent" element={<CreateContent />} />
       <Route path="createmembership" element={<CreateMemberships />} />
       <Route path="create-nfts" element={<CreateNFT />} />
-      <Route path="dashboard" element={<CreateDashboard />} />
+      <Route path="marketplace" element={<CreateMarketplace />} />
+      <Route path="dashboard" element={<CreateMarketplace />} />
+
     </Routes>
     </BrowserRouter>
-  </React.StrictMode>
+    </ApolloProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
